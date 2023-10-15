@@ -1,9 +1,3 @@
-
-
-# Poisoning_Attacks
-
-### A slide for the Poisoning Attacks to Local Differential Privacy Protocols for Key-Value Data paper
-
 - Make slideshows with [Slidev](https://github.com/slidevjs/slidev.git)
 - The theme used by slide is [slidev-theme-prussianblue](https://github.com/isaaccaa/slidev-theme-prussianblue.git)
 
