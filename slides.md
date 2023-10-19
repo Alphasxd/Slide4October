@@ -420,7 +420,6 @@ id: 1
 - **Tow Types of Accounts**
 
   > - ***External Owned Accounts (EOAs)***
-
   > - ***Contract Accounts***
 
 <!-- 
