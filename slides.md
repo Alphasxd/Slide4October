@@ -254,21 +254,16 @@ id: 1
 
 <mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_12_18_47_he.png" class="right-10 absolute" width="450" />
 
-- **没有碰撞**
+- **Collision Freeness**
+> $F(x) = F(y) \Leftrightarrow  x = y$
 
-> 加密后的两个值相等
+- **Hiding Property**
+> - Encrypted output reveals no<br> information about original input
+> - Brute force search is the only way
 
-> 加密前两个值也是相等的
-
-- **隐藏的性质**
-
-> 加密后这个函数值很难反推出原始的输入值<br>只能用蛮力一个个的去试
-
-- **同态运算**
-
-> - 同态加法
-
-> - 同态乘法
+- **Homomorphic Operations**
+> - Homomorphic Addition
+> - Homomorphic Multiplication
 
 <!--
 第一个实现全同态加密算法的科学家：Craig Gentry，也就是数据可用不可见 ，我允许你使用我的数据，但这个数据具体是什么，不能告诉你
@@ -297,22 +292,27 @@ id: 1
 
 $\pmb{f(X_1,X_2,X_3,\ldots\ldots,X_n)=(Y_1,Y_2,Y_3,\ldots\ldots,Y_n)}$
 
-- **姚氏百万富翁问题**
+#### **Yao's Millionaire Problem**
+> - **Garbled Circuits**
+> - **Secret Sharing**
+> - **Oblivious Transfer**
 
-- 混淆电路
+<br>
 
-- 秘密分享
-
-- 不经意传输
-
-# 分类
-
-- 通用
-
-- 特定问题
+#### **Categories**
+> - **General Techniques**
+> - **Techniques for Specific Problem**
 
 <!--
-
+## 姚氏百万富翁问题是安全多方计算领域的一个典型问题。问题描述是:
+两名百万富翁希望比较自己谁更富有,但是不希望将自己的财富数额透露给对方。如何通过一种安全的协议,让他们比较财富而不泄露实际数值?
+我们假设有n个参与方，他们各自有数据 X1，X2，，，Xn，f是一个约定好的函数，假设所有的参与方都事先商量好了，我们要一起算这个函数f得到的结果是Y1，Y2，，，Yn。第一个参与方X1，他知道自己的输入X1，同时也能获得自己的输出Y1，但是他没有办法知道其他n-1个输入X2，，，Xn，也没有办法获得其他的输出Y2，，，Yn，这是用来实现隐私保护的，对比一下这个图跟联邦学习那个图，这个模式的去中心化程度更高一点。联邦学习其实是有一个中央服务器的，这个中央服务器应该说也不算是可信第三方。因为虽然参与方把梯度的更新反馈到中央服务器上，但是原始数据并没有送过去。然而安全多方计算在很多情况下可以做到不需要中央服务器，完全是P2P结构的。
+## 分类
+- 通用的安全多方计算：可以计算任意约定的函数，功能强大，但是效率低下
+- 针对特定问题的安全多方计算：效率高，但是只能计算特定的函数
+  目前应用的场景有：
+  - 隐私集合求交集
+  - 隐私信息检索
 -->
 
 ---
