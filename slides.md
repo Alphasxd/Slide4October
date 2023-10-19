@@ -41,7 +41,7 @@ title: IEEE TDSC
 总之,本文设计了TAB框架,基于区块链实现第三方服务的透明度和可信度,为加密privacy应用建立信任基础。
 -->
 
----
+ ---
 id: 1
 ---
 
@@ -56,7 +56,7 @@ id: 1
 
 <br>
 
-<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_10_32_17_tpa.png" class="right-10 absolute" width="400" />
+<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_10_32_17_tpa.png" class="right-10 absolute" width="430" />
 
 **Assumptions**
   > - ***Fully Trusted***
@@ -252,7 +252,7 @@ id: 1
 
 # Homomorphic Encryption
 
-<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_12_18_47_he.png" class="right-10 absolute" width="450" />
+<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_12_18_47_he.png" class="right-10 absolute" width="440" />
 
 - **Collision Freeness**
 > $F(x) = F(y) \Leftrightarrow  x = y$
@@ -288,7 +288,7 @@ id: 1
 # Secure Multi-Party Computing
 
 
-<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_12_8_51_mpc.png" class="right-10 absolute" width="400" />
+<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_12_8_51_mpc.png" class="right-10 absolute" width="360" />
 
 $\pmb{f(X_1,X_2,X_3,\ldots\ldots,X_n)=(Y_1,Y_2,Y_3,\ldots\ldots,Y_n)}$
 
@@ -376,7 +376,7 @@ id: 1
 
 > A blockchain is a growing list of records (a.k.a, blocks) that are linked via cryptographic techniques, where each block contains a cryptographic hash of the previous block, a timestamp, and the transaction data.
 
-<mimage layout="c" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_13_55_4_Blockchain.jpg" class="right-10 absolute" width="400" />
+<mimage layout="c" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/18_13_55_4_Blockchain.jpg" class="right-10 absolute" width="350" />
 
 <br>
 
@@ -798,6 +798,9 @@ id: 3
 # Potential Collusion
 > ***We note that the case of potential collusion between a dishonest TPA and honest-but-curious actors is not fully considered in this paper***
 
+<mimage layout="c" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/19_14_51_46_Collusion.jpg" class="right-10 absolute" width="370" />
+
+
 - **Resort to Game Theory**
 > - ***Prisoner's dilemma***
 > - ***Rock-paper-scissors***
@@ -928,7 +931,7 @@ id: 3
 # Design of $\pmb{\mathcal{B}_{SC}^{TAB}}$
 > We use $\mathcal{B}$ to represent the Ethereum blockchain, and let $\mathcal{B}_{SC}^{TAB}$ denotes our proposed smart contract deployed in the blockchain
 
-<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/16_11_31_19_20231016113119.png" class="right-10 absolute" width="400" />
+<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/16_11_31_19_20231016113119.png" class="right-10 absolute" width="370" />
 
 - **Administrative Module**
 
@@ -1015,7 +1018,12 @@ $$
 $$
 
 <!--  
-
+- TAB 也适用于其他流行的基于 TPA 的密码系统。
+- 文章分析了 TAB 在基于属性的加密 (ABE) 方案中的适用性
+- TAB 是一个通用框架，并不局限于建立在不同关键服务凭证基础上的审计义务类型。
+- TAB 可以通过替换以下审计义务来适配于基于 ABE 的应用程序
+- Sj是属性集合
+- H()是哈希函数，使用属性集 Sj 生成的访问控制私钥的哈希值
 -->
 
 ---
@@ -1072,7 +1080,7 @@ id: 4
 
 # Implemented Smart Contract
 
-<br>
+<mimage layout="c" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/19_14_44_31_solidity.png" class="right-10 absolute" width="160" />
 
 #### **Programming Language**
 
@@ -1093,7 +1101,7 @@ id: 4
 > *Ethereum Virtual Machine*
 
 <!--  
-
+我们使用Truffle开发环境、测试框架和资产管道，使用以太坊虚拟机，在Solidity编程语言中实现智能合约
 -->
 
 ---
@@ -1133,7 +1141,6 @@ id: 4
 
 <img src="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/15_16_48_51_DMU.png" class="top-5 right-5 absolute" width="80" />
 
-<br>
 <br>
 
 # Experimental Setup
