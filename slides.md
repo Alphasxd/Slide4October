@@ -217,7 +217,8 @@ id: 1
 - **Federated Learning Learning**
 
 > - ***Differential Privacy***<br>
->     Add noise to the results to protect privacy
+
+<br>
 
 # Potential Privacy Leakage
 
@@ -327,16 +328,16 @@ id: 1
 
 > Authority transparency is defined as a publicly auditable set of a TPA’s activities.
 
-- **Obligations $(\mathcal{O})$**
+- **Obligations $\pmb{(\mathcal{O})}$**
 
-- **Public Parameter Distribution $(\mathcal{O}_{pp})$**
+- **Public Parameter Distribution $\pmb{(\mathcal{O}_{pp})}$**
 
-- **Trustworthy Key Service $(\mathcal{O}_{ks})$**
+- **Trustworthy Key Service $\pmb{(\mathcal{O}_{ks})}$**
 
 # Definition
 
 $$
-\mathcal{AT}_{\mathcal{O}}^{\mathcal{T},\mathcal{L},\mathcal{C}}=(\mathrm{Gen}_{\mathcal{O}},\mathrm{Log}_{\mathcal{O}_{pp}},\mathrm{Log}_{\mathcal{O}_{ks}},\mathrm{Check}_{\mathcal{O}},\mathrm{Inspect},\mathrm{Gossip})
+\pmb{\mathcal{AT}_{\mathcal{O}}^{\mathcal{T},\mathcal{L},\mathcal{C}}=(\mathrm{Gen}_{\mathcal{O}},\mathrm{Log}_{\mathcal{O}_{pp}},\mathrm{Log}_{\mathcal{O}_{ks}},\mathrm{Check}_{\mathcal{O}},\mathrm{Inspect},\mathrm{Gossip})}
 $$
 
 |    **$\mathcal{T}$**    | **$\mathcal{L}$** | **$\mathcal{C}$** |
@@ -385,7 +386,7 @@ id: 1
 
 - **Digital Events**
 
-> ***that have been executed and shared***
+  > ***that have been executed and shared***
 
 <!-- 
 Blockchain是一个不断增长的记录(区块)链条,每个区块通过加密技术与前一个区块连接,并包含以下信息:- 前一个区块的加密哈希值
@@ -483,7 +484,6 @@ id: 2
 
 <br>
 <br>
-<br>
 
 # Regulations
 
@@ -577,29 +577,6 @@ challenge:
 -->
 
 ---
-id: 2
----
-
-<img src="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/15_16_48_51_DMU.png" class="top-5 right-5 absolute" width="80" />
-
-<br>
-<br>
-
-# Contributions
-
-**Formal TAB Model**
-> Considering the scenarios of generic crypto-based privacy-preserving applications
-
-**Novel Smart Contract**
-> Achieve automatic accountability & Ethereum blockchain as the  public ledger infrastructure.
-
-**Incentive Mechanism**
-> Reward fulfills & Punish violates & Encourage other entities to help audit and inspect 
-
-**Security Guarantee**
-> The evaluation result shows that TAB is efficient and provides security and privacy guarantees.
-
----
 id: 3
 ---
 
@@ -636,18 +613,14 @@ id: 3
 
 # Entities in TAB
 
-<br>
-
-#### **TPA**
-> The TPA is the same role as in the ordinary FE cryptosystem, but in TAB it has additional responsibilities to fulfill
+# TPA
+> ***The TPA is the same role as in the ordinary FE cryptosystem, but in TAB it has additional responsibilities to fulfill***
 
 - **Submit public parameters**
-> identity-to-public-key bindings
-
-- **Reporting its fulfillment in the key service**
+> ***identity-to-public-key bindings***
 
 - **Verifying the records**
-> Verifying that the submitted/reported obligations are permanently recorded in the blockchain
+> ***Verifying that the submitted/reported obligations are permanently recorded in the blockchain***
 
 <!--  
 TPA 与普通 FE 密码系统中的角色相同，但在 TAB 中，它需要履行额外的职责，包括：
@@ -668,19 +641,17 @@ id: 3
 
 # Entities in TAB
 
-<br>
-
-#### **Actors**
-> Actors include all users of an crypto-based privacy-preserving applications
+# Actors
+> ***Actors include all users of an crypto-based privacy-preserving applications***
 
 - **Data owner**
-> Employ the encryption algorithm
+> ***Employ the encryption algorithm***
 
 - **Data user**
-> Perform secure computation or access control via the decryption algorithm
+> ***Perform secure computation or access control via the decryption algorithm***
 
 - **Fulfill the Obligations**
-> They are involved in interaction with other actors and/or the TPA
+> ***They are involved in interaction with other actors and/or the TPA***
 
 <!--  
 加密隐私保护应用的参与方包括:
@@ -705,15 +676,15 @@ id: 3
 
 <br>
 
-#### **Monitors**
+# Monitors
 
 - **Inspecting the contents**
-> Monitors are responsible for inspecting the contents of the recorded auditing obligations
+> ***Monitors are responsible for inspecting the contents of the recorded auditing obligations***
 
 - **Find suspicious obligations**
 
 - **Participating entities**
-> In TAB, the encryption entities or the additional independent entities play the role of the monitors.
+> ***In TAB, the encryption entities or the additional independent entities play the role of the monitors.***
 
 
 <!--  
@@ -741,8 +712,10 @@ id: 3
 
 <br>
 
-#### **Administrator**
+# Administrator
 > An administrator is responsible for the deployment, maintenance, and administration of the smart contract.
+
+<br>
 
 - **Deployment**
 
@@ -821,24 +794,33 @@ id: 3
 <br>
 <br>
 <br>
-<br>
 
 # Potential Collusion
-> We note that the case of potential collusion between a dishonest TPA and honest-but-curious actors is not fully considered in this paper
-
+> ***We note that the case of potential collusion between a dishonest TPA and honest-but-curious actors is not fully considered in this paper***
 
 - **Resort to Game Theory**
+> - ***Prisoner's dilemma***
+> - ***Rock-paper-scissors***
 
-- **Incentive mechnism in smart contracts**
 
-- **Everyone participates**
+- **Smart Contracts**
+> - ***Automatic Execution*** 
+> - ***Immutability***
+> - ***Distributed Data Storage***
 
 <!--  
-与其通过技术手段禁止或防止串通，不如借助博弈论和智能合约中设计的激励机制[29]来解决两个利益相关者（即 TPA 和行为者）之间的串通问题。
+- 与其通过技术手段禁止或防止串通，不如借助博弈论和智能合约中设计的激励机制[29]来解决两个利益相关者（即 TPA 和行为者）之间的串通问题。
 
- 还涉及各实体的激励机制，因此可以从博弈论的角度防止这种合谋行为。
+# 博弈论
+- prisoner's dilemma(囚徒困境)描述了两个囚犯面临承认或不承认罪行的选择,展示了非合作博弈中参与者可能作出非最优选择的情况。
+- rock-paper-scissors(石头剪刀布)是常见的匹配 pennies game 模型,两个玩家同时出石头、剪刀或布,获胜规则为石头克剪刀,剪刀克布,布克石头。这展示了零和博弈中的策略选择。
+- 这两个模型一个展示非合作博弈,一个展示零和博弈,都能很好地说明博弈论中策略性思考和均衡分析的重要性。
 
-此外，与 [16] 中基于权限透明度框架的安全日志系统不同，在该框架中，日志记录器被视为潜在的不诚实对手，而在 TAB 中，以太坊智能合约被用作公共分类账基础设施，它已被证明是一个可信计算平台。
+# 智能合约
+- Automatic Execution 智能合约的条款定义了各方的权利和义务,代码自动执行这些条款,无需第三方干预
+- Immutability 智能合约基于区块链,合同代码和执行情况都是透明的,不可篡改。
+- Distributed Data 智能合约数据存储在分布式账本,预防单点故障。
+
 -->
 
 ---
@@ -920,7 +902,9 @@ $$
 <br>
 
 #### **Theorem**
-If the hash function is collision-resistant and the signature scheme is unforgeable, then TAB model comprises a secure transparency framework.
+<br>
+
+> ***If the hash function is collision-resistant and the signature scheme is unforgeable, then TAB model comprises a secure transparency framework.***
 
 
 <!-- 
@@ -946,15 +930,15 @@ id: 3
 
 <mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/16_11_31_19_20231016113119.png" class="right-10 absolute" width="400" />
 
-- **Administrative module**
+- **Administrative Module**
 
-- **Access control module**
+- **Access control Module**
 
-- **Obligation module**
+- **Obligation Module**
 
-- **Inspection module**
+- **Inspection Module**
 
-- **Incentive module**
+- **Incentive Module**
 
 
 <!-- 
@@ -1045,20 +1029,20 @@ id: 4
 
 # Security Guarantee
 
-> - **Log-Consistency**
-> - **Unforgeable-Service**
-> - **Non-Fabrication**
+> - ***Log-Consistency***
+> - ***Unforgeable-Service***
+> - ***Non-Fabrication***
 
 <br>
 
 # Privacy Guarantee
-> - **ABE, FE, and multi-key HE**
-> - **Without any privacy-sensitive information**
+> - ***ABE, FE, and multi-key HE***
+> - ***Without any privacy-sensitive information***
 
 <br>
 
 # Trustworthiness Goal
-> - **Deploy IPM in the Smart Contract**
+> - ***Deploy IPM in the Smart Contract***
 
 <!--  
 ## 日志一致性(log-consistency):
@@ -1092,19 +1076,21 @@ id: 4
 
 #### **Programming Language**
 
-> Solidity<br>
+> *Solidity*<br>
 
+<br>
 <br>
 
 #### **Development Environmen**
 
-> Truffle
+> *Truffle*
 
+<br>
 <br>
 
 #### **Test Framework and Asset Pipeline**
 
-> Ethereum Virtual Machine
+> *Ethereum Virtual Machine*
 
 <!--  
 
@@ -1149,19 +1135,20 @@ id: 4
 
 <br>
 <br>
-<br>
 
 # Experimental Setup
 
 Experimental hardware
-> Macbook Pro platform with 2.3GHz 8-Core Intel Core i9 processors and 32GB DDR4 memory
+> - *Macbook Pro platform* 
+> - *2.3GHz 8-Core Intel Core i9 processors*
+> - *32GB DDR4 memory*
 
 Test Network
-> the Ethereum official test network, Rinkeby
+> *The Ethereum official test network, Rinkeby*
 
 Test Cases
-> automated testing framework of Truffle
-> built on Mocha
+> - *Automated testing framework of Truffle*
+> - *Built on Mocha*
 
 
 <!--  
@@ -1175,12 +1162,19 @@ id: 4
 <img src="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/15_16_48_51_DMU.png" class="top-5 right-5 absolute" width="80" />
 
 <br>
-<br>
-<br>
 
 # Experimental Results
 
 <img src="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/16_17_8_38_20231016170838.png" class="mx-auto" />
+
+<!--  
+- 我们在表 2 中报告了 TAB 在不同测试场景下对选定功能的性能表现。其中，性能包括两个方面：Gas成本和测试时间。
+- 如表 2 所示，大多数功能的成本都很低。具体来说，除智能合约部署外，各项功能的成本一般都在 10^5 Gas的水平。
+- 关于调用最多的义务和检查功能，为记录一项关键服务的审计义务，与三阶段承诺相关的功能（即记录 KSSKReq、记录 KSSKResp、记录 KSConfirm）分别花费了 43173 、84211 、43402 Gas。
+- Ks和PP审核义务的检查成本分别为 24511 和 37842 Gas。
+- 还测量了测试选定函数所需的时间。除Administrative外，其余功能的调用时间均小于 100 毫秒。
+- 测试时间与执行时间有关，而不是与确认交易的时间有关，所以智能合约的部署时间仅为 183 毫秒，而不是一般的交易确认时间（约 6 分钟）。
+-->
 
 ---
 id: 4
@@ -1194,7 +1188,29 @@ id: 4
 
 # Framework’s Scalability
 
-<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/16_11_36_40_20231016113640.png" class="right-10 absolute" width="450" />
+<mimage layout="r" url="https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/10/16_11_36_40_20231016113640.png" class="right-10 absolute" width="500" />
+
+<br>
+
+#### **Federated learning**
+> Built on the FE cryptosystem<br> with a TPA for key service
+
+<br>
+
+#### **Enrolled Data Owners**
+> Increased from 6 to 10
+
+<br>
+
+#### **Train a CNN Model**
+> Over MINST dataset
+
+<!--  
+- 由于 TAB 只关注用户与 TPA 之间的关键交互，与 FL 培训的时间成本相比，时间成本可以忽略不计
+- 如图所示，引入TAB框架对原有隐私保护联邦学习训练时间影响很小。
+- 参与者数量增加会影响隐私保护应用(联邦学习)的时间
+- 但对TAB时间影响不明显
+-->
 
 ---
 id: 5 
@@ -1204,24 +1220,25 @@ id: 5
 
 <br>
 <br>
-<br>
 
 # Conclusion
 
 <br>
 
-- #### **Key-value LDP protocols are vulnerable to poisoning attacks**
+- #### **Proposing TAB framework for TPA transparency**
 
 <br>
 
-- #### **An attacker can promote frequency/mean of any target items**
+- #### **Applying to modern privacy-preserving cryptography applications**
 
 <br>
 
-- #### **We highlight the need for strong defenses against such attacks**
+- #### **Using Ethereum blockchain as public ledger**
 
 <br>
 
-> *Our defends help to degree, but there is more work to do.*
+- #### **Novel smart contract for accountability with incentives**
 
+<br>
 
+- #### **Evaluation shows efficiency, security and privacy of TAB**
