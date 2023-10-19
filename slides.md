@@ -223,7 +223,6 @@ id: 1
 # Potential Privacy Leakage
 
 > ***The third party is honest but curious***
-
 > ***Exploit a manipulated vector***
 
 <!--
