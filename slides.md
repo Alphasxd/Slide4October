@@ -22,7 +22,7 @@ title: IEEE TDSC
 
 <div class="pt-12">
   <span> 
-    <i>VOL. 20, NO. 3, MAY/JUNE 2023</i>
+    <i>Sheldon</i>
   </span>
 </div>
 
